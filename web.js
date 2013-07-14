@@ -19,9 +19,3 @@ app.listen(port, function() {
   console.log("Listening on " + port);
 });
 
-
-send404 = function(res) {
-        res.writeHead(404);
-	res.write('404');
-	res.end();
-};
