@@ -8,7 +8,7 @@ app.get('/', function(request, response) {
   //response.send('Hello World 2!');
   
 	var file = fs.readFileSync('index.html');	
-	response.writeHead(200, {'Content-Type': 'text/plain'});
+	response.writeHead(200, {'Content-Type': 'text/html'});
 	response.write(file.toString('utf-8'));
 	res.end();
 		
