@@ -10,7 +10,7 @@ app.get('/', function(request, response) {
 	fs.readFileSync('index.html', function(err, data) {
 		if(err) return send404(response);	
 		response.writeHead(200, {'Content-Type': 'text/plain'});
-		response.write(data, 'utf8');
+		response.write(data.toString('utf8'), 'utf8');
 		res.end();
 	});		
 });
